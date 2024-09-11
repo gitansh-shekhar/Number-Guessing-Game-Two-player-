@@ -44,17 +44,18 @@ public class NumberGuessing {
             }
         }
         while(true);
+         int rand1=ns.random();
         System.out.println(p2+" Please Guess a number :");
 
         do{
 
             int guess=sc.nextInt();
             countP2++;
-            if(rand==guess){
+            if(rand1==guess){
                 System.out.println("AHH "+p2+" guessed the number in "+countP2+" move");
                 break;
             }
-            else   if(guess>rand){
+            else   if(guess>rand1){
                 System.out.println("Guess smaller number");
             }
             else{
